@@ -1,0 +1,3 @@
+module DemoTest {
+	exports MyPackage;
+}
