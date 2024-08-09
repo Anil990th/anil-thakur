@@ -12,8 +12,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import pageobject.LoginLogout;
+import pageobject.basemethods.InitializeBrowser;
 
-public class ReusableComponents {
+public class ReusableComponents extends InitializeBrowser {
 
    WebDriver driver;
   public ReusableComponents(WebDriver driver)  // constructor to catch super method which is there in fworkcregiustration super keyword 

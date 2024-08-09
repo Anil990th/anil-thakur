@@ -15,9 +15,9 @@ public class InvitemeMemberuploadCSVEmployeesTest {
 	@Test
 	public static void inviteEuploadCsv () throws InterruptedException, IOException {
     
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\Dell\\Downloads\\Automation\\driversfolder\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C:\\\\Users\\\\hp\\\\eclipse-workspace\\\\AutomationNotes\\\\driversfolder\\\\chromedriver.exe");
 		ChromeOptions options = new ChromeOptions();
-		options.setBinary("C:\\Users\\Dell\\Downloads\\chrome-win64 (1)\\chrome-win64\\chrome.exe");
+		options.setBinary("C:\\\\Users\\\\hp\\\\Downloads\\\\chrome-win64 (1)\\\\chrome-win64\\\\chrome.exe");
 		WebDriver driver = new ChromeDriver(options);
 			
 			// Maximize window

@@ -38,7 +38,7 @@ public static void main(String[] args) throws InterruptedException
 	CustomerRegistration C = new CustomerRegistration(driver);
 	C.Customerregistration("test","at966@gmail.com","809394799089");
 	
-	// Logout
+	// Logoutz
 	R.Logoutofapp();
 	
 	// close browser
