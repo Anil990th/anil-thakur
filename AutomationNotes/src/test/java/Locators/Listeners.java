@@ -32,8 +32,9 @@ public class Listeners implements ITestListener {
 	}
 
 	@Override
-	public void onTestSkipped(ITestResult result) {
-		// TODO Auto-generated method stub
+	public void onTestSkipped(ITestResult result) 
+	{
+		
 		
 	}
 

@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="swan.Createcampaign">
+      <class name="Locators.Createcampaign">
         <methods>
-          <include name="creating"/>
+          <include name="locatorsmethod"/>
         </methods>
-      </class> <!-- swan.Createcampaign -->
+      </class> <!-- Locators.Createcampaign -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

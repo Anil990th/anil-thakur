@@ -1,24 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite parallel = "tests" name="Suite">
-  <test thread-count="5" name="Login">
+	
+	<listeners>
+		
+	<listener class-name="swan.genericlib.Listeners"/>
+		
+	</listeners>
+	
+	
+	
+  <test thread-count="5" name="Campaign2">  
     <classes>
-      <class name="swan.testscript.LogIntoSwan"/> 
-    </classes>
+      <class name="swan.testscript.Campaign2"/>
+    </classes>   
   </test> <!-- Test -->
   
-   <test thread-count="5" name="Logout">
-    <classes>  
-      <class name="swan.testscript.LogOutSwan"/>
-    </classes>
-  </test> <!-- Test -->
-  
-   <test thread-count="5" name="CreateCampaign">
+  <test thread-count="5" name="Campaign">  
     <classes>
       <class name="swan.testscript.Campaign"/>
-    </classes>
+    </classes>   
   </test> <!-- Test -->
- 
+  
   
   
   

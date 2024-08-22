@@ -1,12 +1,16 @@
 package swan.genericlib;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.codehaus.plexus.util.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -22,7 +26,7 @@ import swan.elementRepo.LoginLogout;
 
 public class BaseClass 
 {
-    public WebDriver driver;
+    public  WebDriver driver;
     
     @BeforeMethod(alwaysRun=true)     // why we give always run = true because when you run specific test using grouping then this will create conflit thats why
     public void LaunchBrowser() throws InterruptedException, IOException 
@@ -41,6 +45,7 @@ public class BaseClass
 		options.setBinary("C:\\Users\\hp\\Downloads\\chrome-win64 (1)\\chrome-win64\\chrome.exe");
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
+		implicitwait(10);
 		LandingPage();
 	    Loggingin();	
     	}
@@ -113,13 +118,20 @@ public class BaseClass
 		wait.until(ExpectedConditions.invisibilityOf(element));
 	}
 
-
+      
 	
-	
-	
-	
-	
-	
+	public String getScreenshot(String testCaseName, WebDriver driver) throws IOException
+	   {
+		   
+		   
+		   TakesScreenshot ts = (TakesScreenshot)(driver); //Telling driver to  TAKE  screen shot//and creating object of take Takesreenshot class so that wean use the methods inside it
+		   File source = ts.getScreenshotAs(OutputType.FILE);  // telling driver to store screenshot in a FILE type  and storing it in a object called SOURCE
+		   File file = new File(System.getProperty("user.dir")+"//reports"+testCaseName+".png"); // Telling driver that WHERE TO STORE THE SC and in which FORMAT .
+		   FileUtils.copyFile(source, file);  // this a package by which  driver store the sc, source represents line 131 file represents line 132
+		   return System.getProperty("user.dir")+"//reports"+testCaseName+".png";
+		   
+		   
+	   }
 	
 	
 	

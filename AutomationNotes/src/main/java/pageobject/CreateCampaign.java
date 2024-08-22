@@ -166,12 +166,12 @@ public class CreateCampaign extends LoginLogout {
         
         
 		public void createcampaignf(String campaignname , String entercouponcode, String startdate, String enddate, String discount, String threshold, String maxdiscount, String description, String termsandconditions) throws InterruptedException 
-		{   
-			Thread.sleep(1000);
+		{   implicitwait(5000);
+			Thread.sleep(4000);
 			createcampaignclick.click();
-			Thread.sleep(1000);
+			Thread.sleep(4000);
 			createcampaignbuttonclick.click();
-			Thread.sleep(1000);
+			Thread.sleep(5000);
 			nameofcampaign.sendKeys(campaignname);
 			Thread.sleep(1000);
 			clicksubtype.click();
