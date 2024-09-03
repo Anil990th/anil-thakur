@@ -17,7 +17,7 @@ public class Campaign extends BaseClass
 	{                //Step03           //(HashMap<String,String>input)in above line whats is this ,  here we are telling to the method that we are going to receie hashmaps             
 	                                          //Why StringString in aboe line this is just beause in elements.repo methos we said that it will aaept strings
 		CreateCampaignModule cr = new CreateCampaignModule(driver);
-		cr.createcampaignf(input.get("Campaignname"),input.get("entercouponcode"),input.get("StartDate"),input.get("enddate"),input.get("discount"),input.get("threshold"),input.get("maxdiscount"),input.get("description"),input.get("termsandconditions"));
+		cr.createcampaignf(input.get("Campaignname"),input.get("entercouponcode"),input.get("StartDate"),input.get("enddate"),input.get("discount"),input.get("threshold"),input.get("maxdiscount"),input.get("description"),input.get("termsandconditions"),input.get("CouponLabel"));
 		                 //Step04-getiing the value that ypu want by using input.get which is a hashmapfeature
 		                 //continuation of above-why input check line no 16
 	}
@@ -45,6 +45,7 @@ public class Campaign extends BaseClass
 		map01.put("discount","50");
 		map01.put("threshold", "40");
 		map01.put("maxdiscount", "100");
+		map01.put("CouponLabel"," Label 01");
 		map01.put("description","Grab it now");
 		map01.put("termsandconditions", "Valid only for today");
 		
@@ -56,6 +57,7 @@ public class Campaign extends BaseClass
 		map02.put("discount","50");
 		map02.put("threshold", "40");
 		map02.put("maxdiscount", "100");
+		map02.put("CouponLabel"," Label 01");
 		map02.put("description","Grab it now");
 		map02.put("termsandconditions", "Valid only for today");
 		
@@ -67,6 +69,7 @@ public class Campaign extends BaseClass
 		map03.put("discount","50");
 		map03.put("threshold", "40");
 		map03.put("maxdiscount", "100");
+		map03.put("CouponLabel"," Label 01");
 		map03.put("description","Grab it now");
 		map03.put("termsandconditions", "Valid only for today");
 		

@@ -1,0 +1,33 @@
+[
+    {
+    
+       "CampaignName" : "SUMMER SALE",
+        "CouponCode" : "SUMM",
+        "StartDate" : "1",
+        "EndDate": "7",
+        "Discount":"500",
+        "Threshold" : "400",
+         "MaxDiscount" : "500",
+         "CouponLabel" : " Label 01",
+         "Description" : "Use coupon code and grab the offer just for you",
+         "Terms&Conditions" : "Valid till this week only"
+       
+    }
+      , 
+ 
+    {
+          "CampaignName" : "WINTER SALE",
+         "CouponCode" : "WINT",
+         "StartDate" : "1",
+         "EndDate" : "7",
+         "Discount" : "50",
+         "Threshold" : "40",
+         "MaxDiscount" : "50",
+         "CouponLabel" : " Label 01",
+         "Description" : "Use the code to get best deals ",
+         "Terms&Conditions" : "Valid once per user"
+ 
+     }
+ 
+ 
+ ]

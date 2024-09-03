@@ -165,7 +165,7 @@ public class CreateCampaignModule
 	   //     WebElement clicks;     // eg of how to use webelement page factory in waits  // see line no 223 also .
 	        
 	        
-			public void createcampaignf(String Campaignname , String entercouponcode, String startdate, String enddate, String discount, String threshold, String maxdiscount, String description, String termsandconditions) throws InterruptedException 
+			public void createcampaignf(String Campaignname , String entercouponcode, String startdate, String enddate, String discount, String threshold, String maxdiscount, String description, String termsandconditions, String CouponLabel) throws InterruptedException 
 			{   
 				Thread.sleep(4000);
 				createcampaignclick.click();
@@ -207,7 +207,7 @@ public class CreateCampaignModule
 				clickandentermaxdiscount.sendKeys(maxdiscount);
 				clickdiscounteditems.click();
 				clicknexttbutton.click();
-				clickcouponlabel.click();
+				clickcouponlabel.sendKeys(CouponLabel);
 				enterdescription.sendKeys(description);
 				clickandenterterms.sendKeys(termsandconditions);
 				clicknextttbutton.click();

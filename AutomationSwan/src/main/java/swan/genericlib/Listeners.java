@@ -14,7 +14,7 @@ import com.aventstack.extentreports.Status;
 public class Listeners extends BaseClass implements ITestListener
 {
 	ExtentTest test;  // global variable test so that all the methopds can use it.
-	ExtentReports ex = ExtentReporterNG.getReportObject() ;   //static class ExtentReporterNG so we can call  method inside iot by using dot method name 
+	ExtentReports ex = ExtentReporterNGUtility.getReportObject() ;   //static class ExtentReporterNG so we can call  method inside iot by using dot method name 
 	                                                        //and it is returning ex thats why we have written ExtentReports ex =.
 	
 	ThreadLocal <ExtentTest> extentTest = new ThreadLocal <ExtentTest>();  //while running tests in parallel report generated is wrong to overcome that we wrote this line //video no 178

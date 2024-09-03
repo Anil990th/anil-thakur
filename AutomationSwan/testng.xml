@@ -16,14 +16,6 @@
     </classes>   
   </test> <!-- Test -->
   
-  <test thread-count="5" name="Campaign">  
-    <classes>
-      <class name="swan.testscript.Campaign"/>
-    </classes>   
-  </test> <!-- Test -->
-  
-  
-  
   
   
 </suite> <!-- Suite -->

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="swan.testscript.Campaign2">
+      <class name="swan.testscript.HowToUseJsondata">
         <methods>
-          <include name="CreatingCampaign" invocation-numbers="0 0"/>
           <include name="Logoutuser"/>
+          <include name="CreatingCampaign" invocation-numbers="0 1"/>
           <include name="LaunchBrowser"/>
         </methods>
-      </class> <!-- swan.testscript.Campaign2 -->
+      </class> <!-- swan.testscript.HowToUseJsondata -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

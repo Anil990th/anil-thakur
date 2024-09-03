@@ -10,7 +10,7 @@ import swan.elementRepo.EditCampaign;
 import swan.genericlib.BaseClass;
 import swan.genericlib.RetryTest;
 
-public class Campaign2 extends BaseClass
+public class HowToUseHashmap extends BaseClass
 {                                                                       //  How to use retry mechanisum with different annotations see belowlin2
 	                                                                    // @Test (dataProvider = "CampaignData" , retryAnalyzer=RetryTest.class)
     
@@ -19,7 +19,7 @@ public class Campaign2 extends BaseClass
 	{                //Step03           //(HashMap<String,String>input)in above line whats is this ,  here we are telling to the method that we are going to receie hashmaps             
 	                                          //Why StringString in aboe line this is just beause in elements.repo methos we said that it will aaept strings
 		CreateCampaignModule cr = new CreateCampaignModule(driver);
-		cr.createcampaignf(input.get("Campaignname"),input.get("entercouponcode"),input.get("StartDate"),input.get("enddate"),input.get("discount"),input.get("threshold"),input.get("maxdiscount"),input.get("description"),input.get("termsandconditions"));
+		cr.createcampaignf(input.get("Campaignname"),input.get("entercouponcode"),input.get("StartDate"),input.get("enddate"),input.get("discount"),input.get("threshold"),input.get("maxdiscount"),input.get("description"),input.get("termsandconditions"),input.get("CouponLabel"));
 		                 //Step04-getiing the value that ypu want by using input.get which is a hashmapfeature
 		                 //continuation of above-why input check line no 16
 	}
@@ -30,13 +30,14 @@ public class Campaign2 extends BaseClass
 	{
 	
 		HashMap<String,String> map01 = new HashMap<String,String>();  //Syntax of creating onjet of hashmap which is a class so that we can use the methods present in Hashmap class
-		map01.put("Campaignname","Dataprovidertests");  //in swan.elements repo - creatingCampaigModule  ---you need to give data types and their namaes in method like String[campaignname],String[entercouponcode] etc only then you can use the Hashmaps here
+		map01.put("Campaignname","Datasetoe");  //in swan.elements repo - creatingCampaigModule  ---you need to give data types and their namaes in method like String[campaignname],String[entercouponcode] etc only then you can use the Hashmaps here
 		map01.put("entercouponcode","MAXX");
 		map01.put("StartDate","1");
 		map01.put("enddate", "7");
 		map01.put("discount","50");
 		map01.put("threshold", "40");
 		map01.put("maxdiscount", "100");
+		map01.put("CouponLabel"," Label 01");
 		map01.put("description","Grab it now");
 		map01.put("termsandconditions", "Valid only for today");
 		
