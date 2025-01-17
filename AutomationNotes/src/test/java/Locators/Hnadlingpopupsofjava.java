@@ -1,8 +1,10 @@
 package Locators;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.interactions.Actions;
 
 public class Hnadlingpopupsofjava 
 {
@@ -37,6 +39,11 @@ public class Hnadlingpopupsofjava
 	    
 	    // thhis method is used where no HTML structure is used in popups/alerts
 	    // you have to switch every time you write a code for handling alerts/popups which are not using HTML structure.
+	    
+	    //Example of pressing keys of the keyboard non alphabets key slike enter or tab
+	    Actions sct = new Actions(driver);
+	    sct.sendKeys(Keys.TAB).sendKeys(Keys.ALT).perform();
+	    
 
 	}
 
