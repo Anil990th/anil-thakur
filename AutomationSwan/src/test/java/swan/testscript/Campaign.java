@@ -34,9 +34,9 @@ public class Campaign extends BaseClass
 	}
 	
 	@DataProvider       // Step01// by using this annotation our main method will know that data will come from this method
-	public Object [][] CampaignData()   //Why public Object here beause in line no 72 we are returning Objet Data Type and why[][] these beause with onjet we are also returning two dim array
+	public Object [][] CampaignData()   //Why public Object here beause in line no 76 we are returning Objet Data Type and why[][] these beause with onjet we are also returning two dim array
 	{
-	
+	       //in companys laptop i have converted it to read data from json file 
 		HashMap<String,String> map01 = new HashMap<String,String>();  //Syntax of creating onjet of hashmap which is a class so that we can use the methods present in Hashmap class
 		map01.put("Campaignname","Datapro");  //in swan.elements repo - creatingCampaigModule  ---you need to give data types and their namaes in method like String[campaignname],String[entercouponcode] etc only then you can use the Hashmaps here
 		map01.put("entercouponcode","MAXX");
@@ -77,8 +77,8 @@ public class Campaign extends BaseClass
 		
 		                                                        //  above Line [][] these symbol shows two dimentional array
 	
-		//in Line 72 nuber of curley braces = number of data sets you want the test to run with 
-		//in Line no 72 what is object there , we can make it String,int,decial,int etc basically its a data type , we used objet beause it  accept all kind of data so its easy to use
+		//in Line 76 nuber of curley braces = number of data sets you want the test to run with 
+		//in Line no 76 what is object there , we can make it String,int,decial,int etc basically its a data type , we used objet beause it  accept all kind of data so its easy to use
 		
 	}
 	
